@@ -39,15 +39,15 @@ public class Main {
 
         System.out.println("\nЗадание 5");
         int age2 = 5;
-        boolean isAdult = true;
+        boolean isAdult = false;
         if(age2 < 5){
             System.out.println("Если возраст ребенка равен "+ age2 +", то ему нельзя кататься на аттракционе");
         }else if(age2 >= 5 && age2 <= 14 && isAdult){
             System.out.println("Если возраст ребенка равен "+ age2 +", то ему можно кататься на аттракционе в сопровождении");
+        }else if(age2 >= 5 && age2 <= 14 && !isAdult){
+            System.out.println("Если возраст ребенка равен "+ age2 +", тто ему нельзя кататься на аттракционе без взрослого");
         }else if(age2 > 14){
             System.out.println("Если возраст ребенка равен "+ age2 +", то ему можно без сопровождения взрослого");
-        }else{
-            System.out.println("Нельзя");
         }
 
         System.out.println("\nЗадание 6");
